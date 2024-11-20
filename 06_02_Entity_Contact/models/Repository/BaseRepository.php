@@ -2,8 +2,8 @@
 
 namespace Models\Repository;
 
-use Config\Database;
-use PDO;
+use Models\Database;
+
 
 abstract class BaseRepository
 {
@@ -17,9 +17,9 @@ abstract class BaseRepository
     public function getAllContacts() {
 
         $query = "SELECT * FROM contacts ORDER BY created_at DESC";
-        $result = $this->pdo->prepare($query);
+        $result = $this->pdo->query($query);
         $result->execute();
-        return $result->fetchAll(PDO::FETCH_ASSOC);
+        return $result->fetchAll(\PDO::FETCH_ASSOC);
     }
 
     }

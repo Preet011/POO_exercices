@@ -1,0 +1,15 @@
+# Utilisation des URLs propres
+
+
+# .htaccess simple pour que les URLs soient propres (par exemple, sans le ?action=add visible dans l'URL)
+
+RewriteEngine On
+
+# Si l'URL ne contient pas de fichier explicite, rediriger vers index.php
+
+RewriteRule ^([^/]+)/?$ index.php?action=$1 [QSA,L]
+
+# Si le fichier ou dossier existe, laisser passer la requête
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d

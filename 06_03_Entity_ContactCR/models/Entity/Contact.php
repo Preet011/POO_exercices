@@ -1,48 +1,42 @@
-
 <?php
-// require_once __DIR__ . '/../config/Database.php';
-
 namespace Models\Entity;
 
-class Contact {
-
+class Contact extends BaseEntity
+{
     private $name;
     private $email;
     private $phone;
 
-
-
-
-    public function getName(){
+    public function getName()
+    {
         return $this->name;
     }
 
-    public function setName($name){
+    public function setName($name)
+    {
         $this->name = $name;
         return $this;
     }
 
-
-    public function getEmail(){
+    public function getEmail()
+    {
         return $this->email;
     }
 
-    public function setEmail($email){
+    public function setEmail($email)
+    {
         $this->email = $email;
         return $this;
     }
 
-
-    public function getPhone(){
+    public function getPhone()
+    {
         return $this->phone;
     }
 
-    public function setPhone($phone){
+    public function setPhone($phone)
+    {
         $this->phone = $phone;
         return $this;
     }
-
-
 }
-?>
-

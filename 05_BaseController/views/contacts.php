@@ -1,6 +1,6 @@
 <?php
-$baseURL = '/PHP_POLES/COURS_POO/02_Exercices/02_Correction/04_BaseController';
-include __DIR__ . "/../inc/header.php";
+$baseURL = 'C:\wamp64\www\POO\Exercices\05_BaseController';
+//include __DIR__ . "/../inc/header.php";
 
 ?>
 <h2>Liste des contacts</h2>
@@ -19,6 +19,6 @@ include __DIR__ . "/../inc/header.php";
 </form>
 
 <?php
-include __DIR__ . "/../inc/footer.php";
+//include __DIR__ . "/../inc/footer.php";
 
 ?>

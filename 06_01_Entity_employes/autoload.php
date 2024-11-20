@@ -15,6 +15,3 @@ function autoload($class) {
 
 // Enregistrer la fonction autoload
 spl_autoload_register('autoload');
-
-$baseDir = __DIR__ . '/';
-

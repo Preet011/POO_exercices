@@ -3,8 +3,9 @@
 
 namespace Controllers;
 
-use Models\Repository\ContactRepository;
-use Models\Entity\Contact
+
+use Models\Contact;
+
 class ContactController {
 
    public $contact;

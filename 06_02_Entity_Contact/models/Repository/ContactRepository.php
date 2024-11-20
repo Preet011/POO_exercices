@@ -1,12 +1,14 @@
 <?php
+
+
 namespace Models\Repository;
 
-use Models\Entity;
+use Models\Entity\Contact;
 
 
 class ContactRepository extends BaseRepository
 {
-public function addContact($name, $email, $phone) {
+public function insertContact($name, $email, $phone) {
 
     $query = "INSERT INTO contacts (name, email, phone) VALUES (:name, :email, :phone)";
     $result = $this->pdo->prepare($query);
@@ -22,5 +24,8 @@ public function addContact($name, $email, $phone) {
     }
 }
 
+public function getAllContacts() {
+    return $this->findAll('contacts');
+}
 }
 ?>

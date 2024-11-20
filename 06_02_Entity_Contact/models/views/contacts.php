@@ -1,5 +1,5 @@
 <?php
-$baseURL = '/PHP_POLES/COURS_POO/02_Exercices/02_Correction/04_BaseController';
+//$baseURL = 'C:\wamp64\www\POO\Exercices\06_Entity\controllers\BaseController.php';
 include __DIR__ . "/../inc/header.php";
 
 ?>

@@ -15,7 +15,7 @@ class BaseController {
             require $viewPath;
             require __DIR__ . "/../views/inc/footer.php";
 
-            require __DIR__ . '/../views/layout.php';
+            // require __DIR__ . '/../views/layout.php';
         } else {
             echo "Vue introuvable : $viewPath";
         }

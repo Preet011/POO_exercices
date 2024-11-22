@@ -1,14 +1,17 @@
 <?php
+
 namespace Controllers;
 
-use Models\Contact;
+
 use Models\Entity\Contact;
+
 use Models\Repository\ContactRepository;
 
 class ContactController extends BaseController {
     public function index() {
-        $contact = new Contact();
-        $contacts = $contact->getAllContacts();
+        $contacts = new ContactRepository();
+        $contacts->getAllContacts();
+
         // Utiliser render pour afficher la vue avec les données
         $this->render('contacts', ['contacts' => $contacts]);
     }
@@ -20,7 +23,7 @@ class ContactController extends BaseController {
             $name = $_POST['name'];
             $email = $_POST['email'];
             $phone = $_POST['phone'];
-            $contact = new Contact();;
+            $contact = new ContactRepository();;
             $contact->addContact($name, $email, $phone);
 
             // Redirige vers la liste des contacts

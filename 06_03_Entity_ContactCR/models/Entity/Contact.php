@@ -1,5 +1,8 @@
 <?php
+
 namespace Models\Entity;
+
+
 
 class Contact extends BaseEntity
 {

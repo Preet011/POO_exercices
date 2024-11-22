@@ -1,4 +1,5 @@
 <?php
+
 namespace Models\Repository;
 
 use Models\Entity\Contact;
